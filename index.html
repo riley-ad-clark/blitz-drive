@@ -9,7 +9,7 @@
         <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/style/index.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/style/reset.css" type="text/css" media="all">
-        <script src="./assets/script/" defer></script>
+        <script src="./assets/script/index.js" defer></script>
         <title>Blitz Drop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,10 @@
     <!-- --------------header---------------->
     <header>
         <div class="container flex head">
-            <h2>Blitz Drop</h2>
+            <h2>Blitz Drive</h2>
             <div>
                 <nav class="head">
                     <ul>
-                        <li><a href="#products">products</a></li>
                         <li><a href="#about">about us</a></li>
                         <li><a class="log-in">log in</a></li>
                         <li><a class="c-button">contact</a></li>
@@ -38,22 +37,21 @@
 <!----------------end of header---------------->
 
 <!----------------hero---------------->
-        <section class="hero">
-            <div class="image-container">
-                <img src="./assets/img/hero.jpg" alt="Hero Image">
-                <div class="container center">
-                    <div>
-                        <h1>Feeling despair?</h1>
-                        <h1>Have a breath of fresh air.</h1>
-                        <div class="center">
-                            <a href="#products">
-                                <button class="breathe-in">inhale</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<section class="hero">
+    <div class="image-container">
+        <video class="hero-video"type="video/mp4" autoplay muted loop alt="Hero Background">
+            <source src="./assets/images/hero.mp4">
+        </video>
+        <div class="container center">
+            <div class="center2">
+                <h1>Lightning-fast Delivery</h1>
+                <h1 class="dot">Always on the Dot!</h1>
+                <li><a href="#map" class="breathe-in">Map</a></li>
             </div>
-        </section>
+            
+        </div>
+    </div>
+</section>
 <!----------------end of hero---------------->
 
 <!--------about us-------->
@@ -62,21 +60,25 @@
                     <div class="about-logo"></div>
                 <div class="about-info">
                     <div class="conglomerate">
-                        <h2>Despair Air,</h2>
-                        <h2>Oxygen conglomerate.</h2>
+                        <h2>Blitz Drive,</h2>
+                        <h2>Shipping conglomerate.</h2>
                     </div>
                     <div class="da-desc">
                         <p>
-                            At Despair Air, we don't just sell air; we connect you with all things, former and present. Our passion for pure, refreshing air,
-                            combined with our cutting edge Truffula Essence&copysr; extraction technology, allows us to offer you a 
-                            unique and enchanting experience that you can sip directly from the bottle.
+                            Welcome to Blitz Drive, your premier destination for dependable 
+                            deliveries. We redefine speed and reliability in 
+                            the shipping industry, ensuring your packages reach their 
+                            destination promptly and securely. With our lightning-fast services 
+                            and unwavering commitment to excellence, rest assured that your 
+                            deliveries are in trustworthy hands. Join us in embracing efficiency,
+                            precision, and peace of mind with every shipment through Blitz Drive.
                         </p>
                     </div>
                     <div class="more">
                         <p>
                             Want to know more? 
                             <a href="#">
-                                <button class="click-here">start here</button>
+                                <button class="click-here">Start Here</button>
                             </a>
                         </p>
                     </div>
@@ -84,15 +86,31 @@
             </div>
         </section>
 <!--------end of about us-------->
+
+<!--------track map-------->
+    <div class="tracking-sect">
+        <section class="tracking">
+            <div class="container center">
+                <h2 class="track">Track Your Package</h2>
+                <p>Doesnt matter if you have one or ten!</p> 
+                <p>View your packages progress with our real-time interactive map.</p>
+                <button class="track-package">Track</button>
+            </div>
+        </section>
+<!--------end of track map-------->
+
 <!----map---->
-        <div id='map' style='width: 400px; height: 300px;'></div>
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoicmlsZXktYWQtY2xhcmsiLCJhIjoiY2xxMTlkaHI1MDZ4dzJtbXFzMTk3ZGFpdyJ9.nm-hr6nHp3H7Si29sQNyFQ';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11'
-        });
-        </script>
+        <div class="container">
+            <div id='map'></div>
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoicmlsZXktYWQtY2xhcmsiLCJhIjoiY2xxMTlkaHI1MDZ4dzJtbXFzMTk3ZGFpdyJ9.nm-hr6nHp3H7Si29sQNyFQ';
+            let map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v12'
+            });
+            </script>
+        </div>
+    </div>
 <!----end of map---->
 <!----------------footer---------------->
         <footer>
