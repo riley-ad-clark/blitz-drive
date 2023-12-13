@@ -22,7 +22,7 @@
     <!-- --------------header---------------->
     <header>
         <div class="container flex head">
-            <h2>Blitz Drop</h2>
+            <h2>Blitz Drive</h2>
             <div>
                 <nav class="head">
                     <ul>
@@ -85,14 +85,16 @@
         </section>
 <!--------end of about us-------->
 <!----map---->
-        <div id='map' style='width: 400px; height: 300px;'></div>
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoicmlsZXktYWQtY2xhcmsiLCJhIjoiY2xxMTlkaHI1MDZ4dzJtbXFzMTk3ZGFpdyJ9.nm-hr6nHp3H7Si29sQNyFQ';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11'
-        });
-        </script>
+        <div class="container">
+            <div id='map'></div>
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoicmlsZXktYWQtY2xhcmsiLCJhIjoiY2xxMTlkaHI1MDZ4dzJtbXFzMTk3ZGFpdyJ9.nm-hr6nHp3H7Si29sQNyFQ';
+            let map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            </script>
+        </div>
 <!----end of map---->
 <!----------------footer---------------->
         <footer>

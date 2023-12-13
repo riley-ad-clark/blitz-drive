@@ -24,7 +24,6 @@
 }
 
 .center {
-    height: 100%;
     display: grid;
     place-items: center;
     justify-content: center;
@@ -254,9 +253,17 @@ button.click-here:hover {
 }
 
 /*--------end of about us--------*/
+/*----map----*/
+#map {
+    width: 100%; height: 500px;
+    border-radius: 10px;    
+}
 
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+/*----end of map----*/
 /*--------footer--------*/
-
 .container.flex.foot {
     justify-content: space-between;
 }
@@ -294,4 +301,3 @@ nav.foot a i:hover {
 
 /*--------end of footer--------*/
   
-
