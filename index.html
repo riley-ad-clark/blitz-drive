@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <meta name="author" content="Riley Clark, Zander Toews">
+        <meta name="description" content="Blitz Drop">
+        <meta name="keywords" content="web developement, html, css, javascript, js">
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/style/index.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./assets/style/reset.css" type="text/css" media="all">
+        <script src="./assets/script/" defer></script>
+        <title>Blitz Drop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
+    <!-- --------------header---------------->
+    <header>
+        <div class="container flex head">
+            <h2>Blitz Drop</h2>
+            <div>
+                <nav class="head">
+                    <ul>
+                        <li><a href="#products">products</a></li>
+                        <li><a href="#about">about us</a></li>
+                        <li><a class="log-in">log in</a></li>
+                        <li><a class="c-button">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<!----------------end of header---------------->
+
+<!----------------hero---------------->
+        <section class="hero">
+            <div class="image-container">
+                <img src="./assets/img/hero.jpg" alt="Hero Image">
+                <div class="container center">
+                    <div>
+                        <h1>Feeling despair?</h1>
+                        <h1>Have a breath of fresh air.</h1>
+                        <div class="center">
+                            <a href="#products">
+                                <button class="breathe-in">inhale</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!----------------end of hero---------------->
+
+<!--------about us-------->
+        <section class="two-columns" id="about">
+            <div class="container two-columns">
+                    <div class="about-logo"></div>
+                <div class="about-info">
+                    <div class="conglomerate">
+                        <h2>Despair Air,</h2>
+                        <h2>Oxygen conglomerate.</h2>
+                    </div>
+                    <div class="da-desc">
+                        <p>
+                            At Despair Air, we don't just sell air; we connect you with all things, former and present. Our passion for pure, refreshing air,
+                            combined with our cutting edge Truffula Essence&copysr; extraction technology, allows us to offer you a 
+                            unique and enchanting experience that you can sip directly from the bottle.
+                        </p>
+                    </div>
+                    <div class="more">
+                        <p>
+                            Want to know more? 
+                            <a href="#">
+                                <button class="click-here">start here</button>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--------end of about us-------->
+<!----map---->
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmlsZXktYWQtY2xhcmsiLCJhIjoiY2xxMTlkaHI1MDZ4dzJtbXFzMTk3ZGFpdyJ9.nm-hr6nHp3H7Si29sQNyFQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+        });
+        </script>
+<!----end of map---->
+<!----------------footer---------------->
+        <footer>
+            <div class="container flex foot">
+                <nav class="foot">
+                    <ul>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-x-youtube"></i></a>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    <p>&copy;2023 Despair Air | All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+<!----------------end of footer---------------->
+    </body>
+</html>
